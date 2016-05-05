@@ -1,102 +1,74 @@
-{
+﻿{
   "profile":{
     "pic":"images/myimage.jpg",
-    "username":"jeffweiner08",
-    "firstname":"Nguyễn ",
+    "username":"thái-sơn-nguyễn-42b42611b",
+    "firstname":"Nguyễn",
     "lastname":"Thái Sơn",
-    "headline":"Student at HCMUS",
-    "location":["Ho Chi Minh City","Internet"],
+    "headline":"Student in University of Science",
+    "location":["Viet Nam","Internet"],
     "summary":{
-      "current":["HCMUS","Intuit","DonorsChoose"],
-      "previous":["HCMUS","Accel Partners","Greylock"],
-      "education":["VNUHCM - University of Science"]
+      "current":["University of Science"],
+      "previous":["University of Science"],
+      "education":["University of Science"]
     },
-    "follow":"4,028,248",
-    "twitter":"thaison",
+    "follow":"9,999,999",
+    "twitter":"khanhli81026575",
     "websites":""
   },
   "background":{
     "summary":{
-      "description":"Third-year student at University of Science. Major: Software Engineer. Favorite programming language: Java. Interests: reading, guitar, sport."
+      "description":"Nothing To Say Now."
     },
     "experience":
             [
               {
-              "position":"Developer",
-              "company":"at school",
-              "date":"August 2013 – Present (2 years 8 months)",
-              "company-img":"images/intuit_experience.png",
-              "description":"In this time, I learn how to use C++, C#, Java, SQL and complete personal projects."
-            },
-              {
-                "position":"CEO",
-                "company":"LinkedIn",
-                "date":"December 2008 – Present (7 years 5 months)",
-                "company-img":"images/intuit_experience.png",
-                "description":"Connecting the world's professionals to make them more productive and successful. Since joining the company in December 2008, LinkedIn has expanded its global platform to 23 languages and more than 30 offices around the world, grown its membership base from 33M to more than 347M, and increased its revenue from $78M to over $2.2B in 2014."
+              "position":"Position Here",
+              "company":"Company Here",
+              "date":"From - To Date",
+              "company-img":"Img Link",
+              "description":"Description"
               }
             ],
     "skill":[
       {
-        "endorse_count":"80",
-        "skill_name":"C#"
+        "endorse-count":"97",
+        "skill-name":"PHP"
       },
       {
-        "endorse_count":"80",
-        "skill_name":"C++"
+        "endorse-count":"97",
+        "skill-name":"HTML, CSS"
       },
       {
-        "endorse_count":"75",
-        "skill_name":"Java"
+        "endorse-count":"97",
+        "skill-name":"Javascript"
       },
       {
-        "endorse_count":"50",
-        "skill_name":"HTML&CSS"
+        "endorse-count":"97",
+        "skill-name":".Net"
       }
     ],
     "project":[
       {
-        "project_name":"DICTIONARY",
-        "position":"UI Designer, Programmer.",
-		"environment":"Generics & Collections, FileStream in Java + OOP, XML.",
-		"learn":"Use Generics & Collections for hashtable, read and write file in java, XML Technologies."
+        "project-name":"Traffic Exchange",
+        "project-description":"Deep Learn HTML, CSS, Javascript, PHP, Mysql."
       },
-	  {
-        "project_name":"CARO ONLINE",
-        "position":"UI Designer, Programmer.",
-		"environment":".Net Winform , Socket, MultiThreading in C# + OOP.",
-		"learn":"Head First Socket, Thread in C# with OOP."
+      {
+        "project-name":"Caro Online",
+        "project-description":"Head First Socket, Thread in C# with OOP, deep search and implement Design Pattern to reuse code easier. "
       },
-	  {
-        "project_name":"GRAPHIC DRAWING WITH ALGORITHM",
-        "position":"UI Designer, Programmer.",
-		"environment":".Net Winform, SharpGL in C# + OOP, Drawing Algorithm, Design Pattern.",
-		"learn":"Head First and Implement SharpGL With OOP and Drawing Algorithm, apply Design pattern to reuse code."
+      {
+        "project-name":"Book Trader System",
+        "project-description":"Head First HTML, CSS, PHP MVC."
       }
     ],
     "education":[
       {
-        "school":"VNUHCM - University of Science",
-        "degree":"Bachelor",
-        "major":"IT",
-        "education_date":"2013 – Present",
-        "school-img":"images/wharton_school.png"
-      },
-      {
-        "school":"University of Pennsylvania - The Wharton School",
-        "degree":"Bachelor of Science",
-        "major":"Economics",
-        "education-date":"1988 – June 1992",
-        "school-img":"images/wharton_school.png"
-      },
-      {
-        "school":"University of Pennsylvania - The Wharton School",
-        "degree":"Bachelor of Science",
-        "major":"Economics",
-        "education-date":"1988 – June 1992",
-        "school-img":"images/wharton_school.png"
+        "school":"University of Science",
+        "degree":"Software Engineering",
+        "major":"Software Engineering",
+        "education-date":"2013 – 2017",
+        "school-img":"images/Logo-KHTN.jpg"
       }
-
     ]
   }
 }
