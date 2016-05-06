@@ -9,7 +9,7 @@ app.filter('to_trusted', ['$sce', function($sce){
         };
     }]);
 	
-app.controller('myCtrl', function($scope, $http) {
+app.controller('myCtrl', function($scope, $http, $location, $anchorScroll) {
     $scope.showmore=false;
     $http({
         method : "GET",
@@ -28,29 +28,44 @@ app.controller('myCtrl', function($scope, $http) {
         this.hoverEdit = false;
     };
 	
+	$scope.gotoE = function(id) {
+        
+        $anchorScroll(id);
+    };
+	  
 	$scope.addE = function() {
 		var temp = new Object();
-		temp.position = "Developer";
-		temp.company = "at school";
-		temp.date = "August 2013 – Present (2 years 8 months)";
+		temp.position = "Position";
+		temp.company = "Company";
+		temp.date = "Date";
 		temp.company_img = "";
-		temp.description = "In this time, I learn how to use C++, C#, Java, SQL and complete personal projects.";
+		temp.description = "Description";
 		$scope.data.background.experience.push(temp);
 	};
 	
 	$scope.addS = function() {
 		var temp = new Object();
-		temp.endorse_count = "100";
-		temp.skill_name = "C++";		
+		temp.endorse_count = "50";
+		temp.skill_name = "Language";		
 		$scope.data.background.skill.push(temp);
 	};
 	
-	/* $scope.addP = function() {
+	$scope.addP = function() {
 		var temp = new Object();
-		temp.endorse_count = "100";
-		temp.skill_name = "C++";		
-		$scope.data.background.skill.push(temp);
-	}; */
+		temp.project_name = "Project Name";
+		temp.project_description = "Project description";		
+		$scope.data.background.project.push(temp);
+	};
+	
+	$scope.addEdu = function() {
+		var temp = new Object();
+		temp.school = "School Name";
+		temp.degree = "Degree";	
+		temp.major = "Major";
+		temp.education_date = "Education Date";
+		temp.school_img = "";
+		$scope.data.background.education.push(temp);
+	};
 });
 
 app.directive("contenteditable", function() {

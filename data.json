@@ -66,8 +66,8 @@
         "school":"VNUHCM - University of Science",
         "degree":"Bachelor",
         "major":"Software Engineering",
-        "education-date":"2013 – 2017",
-        "school-img":"images/Logo-KHTN.jpg"
+        "education_date":"2013 – 2017",
+        "school_img":"images/Logo-KHTN.jpg"
       }
     ]
   }
