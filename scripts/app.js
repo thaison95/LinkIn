@@ -37,6 +37,20 @@ app.controller('myCtrl', function($scope, $http) {
 		temp.description = "In this time, I learn how to use C++, C#, Java, SQL and complete personal projects.";
 		$scope.data.background.experience.push(temp);
 	};
+	
+	$scope.addS = function() {
+		var temp = new Object();
+		temp.endorse_count = "100";
+		temp.skill_name = "C++";		
+		$scope.data.background.skill.push(temp);
+	};
+	
+	/* $scope.addP = function() {
+		var temp = new Object();
+		temp.endorse_count = "100";
+		temp.skill_name = "C++";		
+		$scope.data.background.skill.push(temp);
+	}; */
 });
 
 app.directive("contenteditable", function() {

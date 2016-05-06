@@ -546,19 +546,20 @@ body{
     font-weight: 800;
 }
 
-.education .box .left .degree{
+.education .box .left .dm{
     font-size: 1.5em;
     color: #434649;
 }
 
-.education .box .left .degree .major{
+.education .box .left .major{
+	font-size: 1.5em;
     color: #434649;
 }
 
-.education .box .left .degree .major:hover,
+/* .education .box .left .degree .major:hover,
 .education .box .left .school a:hover{
     color: #006fa6;
-}
+} */
 
 .education .box .left .education-date{
     color: #66696a;
@@ -589,4 +590,9 @@ body{
 .btn{
 	float: right;
 	margin-top: -55px;
+}
+
+.btnedu{
+	float: right;
+	margin-top: 0px;
 }

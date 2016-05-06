@@ -132,7 +132,15 @@
                         <tbody>
                         <tr>
                             <th><p><i class="fa fa-twitter" aria-hidden="true"></i>  Twitter</p></th>
-                            <td><a href="">{{data['profile']['twitter']}}</a></td>
+                            <td>
+								<a href="" id="q" ng-mouseleave="hoverOut()" ng-mouseover="hoverIn()" contenteditable="true" ng-model="data['profile']['twitter']"></a>
+								<span ng-show="hoverEdit" class="animate-show">
+									<a>
+										<img src="https://cdn2.iconfinder.com/data/icons/freecns-cumulus/16/519584-081_Pen-16.png" alt="">
+										Edit
+									</a>
+								</span>
+							</td>
                         </tr>
                         <tr>
                             <th><p><i class="fa fa-file-o" aria-hidden="true"></i>  Websites</p></th>
@@ -237,13 +245,21 @@
                 <div class="bgtitle">
                     <img src="images/skill_logo.png" alt="">
                     <p>Skills</p>
+					<button class="btn" ng-click="addS()">Add</button>
                     <div class="clear"></div>
                 </div>
                 <div class="clear bgcontent">
                     <!-- <p>Top Skills</p> -->
-                    <div class="clear box" ng-repeat="item in data['background']['skill']">
-                        <a class="endorse-count" href="">{{item['endorse-count']}}</a>
-                        <a class="skill-name" href="">{{item['skill-name']}}</a>
+                    <div class="clear box" ng-repeat="item in data['background']['skill']">                        
+						<a class="endorse-count" contenteditable="true" id="q" ng-mouseleave="hoverOut()" ng-mouseover="hoverIn()" href="" ng-model="item['endorse_count']"></a>
+						<span ng-show="hoverEdit" class="animate-show">
+							<a>
+								<img src="https://cdn2.iconfinder.com/data/icons/freecns-cumulus/16/519584-081_Pen-16.png" alt="">
+								Edit
+							</a>
+						</span>
+						<a class="skill-name" contenteditable="true" id="q" ng-mouseleave="hoverOut()" ng-mouseover="hoverIn()" href="" ng-model="item['skill_name']"></a>
+						                        
                         <div class="clear"></div>
                     </div>
                 </div>
@@ -252,27 +268,65 @@
                 <div class="bgtitle">
                     <img src="images/project_logo.png" alt="">
                     <p>Projects</p>
+					<button class="btn" ng-click="addP()">Add</button>
                     <div class="clear"></div>
                 </div>
                 <div class="clear bgcontent">
-                    <div class="box" ng-repeat="item in data['background']['project']">
-                        <p class="project-name">{{item['project-name']}}</p>
-                        <p class="project-description" ng-bind-html="item['project-description']|to_trusted"></p>
-                    </div>
+                    <div class="box" ng-repeat="item in data['background']['project']">					
+                        <a class="project-name" contenteditable="true" id="q" ng-mouseleave="hoverOut()" ng-mouseover="hoverIn()" ng-model="item['project-name']"></a>
+                        <span ng-show="hoverEdit" class="animate-show">
+							<a>
+								<img src="https://cdn2.iconfinder.com/data/icons/freecns-cumulus/16/519584-081_Pen-16.png" alt="">
+								Edit
+							</a>
+						</span>
+						<p class="project-description" contenteditable="true" id="q" ng-mouseleave="hoverOut()" ng-mouseover="hoverIn()" ng-model="item['project-description']"></p>
+						<span ng-show="hoverEdit" class="animate-show">
+							<a>
+								<img src="https://cdn2.iconfinder.com/data/icons/freecns-cumulus/16/519584-081_Pen-16.png" alt="">
+								Edit
+							</a>
+						</span>
+					</div>
                 </div>
             </div>
             <div class="bgsection education">
                 <div class="bgtitle">
                     <img src="images/education_logo.png" alt="">
+					<button class="btnedu" ng-click="addE()">Add</button>
                     <p>Education</p>
                     <div class="clear"></div>
                 </div>
                 <div class="clear bgcontent">
                     <div class="clear box" ng-repeat="item in data['background']['education']">
                         <div class="left">
-                            <h4 class="school"><a href="">{{item['school']}}</a></h4>
-                            <span class="degree">{{item['degree']}}, <a class="major" href="">{{item['major']}}</a></span>
-                            <p class="education-date">{{item['education-date']}}</p>
+                            <h4 class="school">
+								<a href="" contenteditable="true" id="q" ng-mouseleave="hoverOut()" ng-mouseover="hoverIn()" ng-model="item['school']"></a>
+								<span ng-show="hoverEdit" class="animate-show">
+									<a>
+										<img src="https://cdn2.iconfinder.com/data/icons/freecns-cumulus/16/519584-081_Pen-16.png" alt="">
+										Edit
+									</a>
+								</span>
+							</h4>
+                            <div id="q">
+								<a class="dm" contenteditable="true" ng-mouseleave="hoverOut()" ng-mouseover="hoverIn()" ng-model="item['degree']"></a>
+								<a class="dm">, </a>
+								<a class="dm" contenteditable="true" ng-mouseleave="hoverOut()" ng-mouseover="hoverIn()" ng-model="item['major']"></a>
+								<span ng-show="hoverEdit" class="animate-show">
+									<a>
+										<img src="https://cdn2.iconfinder.com/data/icons/freecns-cumulus/16/519584-081_Pen-16.png" alt="">
+										Edit
+									</a>
+								</span>
+							</div>
+                            <a id="q" class="education-date" contenteditable="true" ng-mouseleave="hoverOut()" ng-mouseover="hoverIn()" ng-model="item['education-date']"></a>
+							<span ng-show="hoverEdit" class="animate-show">
+								<a>
+									<img src="https://cdn2.iconfinder.com/data/icons/freecns-cumulus/16/519584-081_Pen-16.png" alt="">
+									Edit
+								</a>
+							</span>
                         </div>
                         <div class="right">
                             <img class="school-img" src="{{item['school-img']}}" width="60" height="60" alt="">

@@ -31,40 +31,40 @@
             ],
     "skill":[
       {
-        "endorse-count":"80",
-        "skill-name":"C#"
+        "endorse_count":"80",
+        "skill_name":"C#"
       },
       {
-        "endorse-count":"80",
-        "skill-name":"C++"
+        "endorse_count":"80",
+        "skill_name":"C++"
       },
       {
-        "endorse-count":"75",
-        "skill-name":"Java"
+        "endorse_count":"75",
+        "skill_name":"Java"
       },
       {
-        "endorse-count":"50",
-        "skill-name":"HTML&CSS"
+        "endorse_count":"50",
+        "skill_name":"HTML&CSS"
       }
     ],
     "project":[
       {
-        "project-name":"Traffic Exchange",
-        "project-description":"Deep Learn HTML, CSS, Javascript, PHP, Mysql."
+        "project_name":"DICTIONARY",
+        "project_description":"Use Generics & Collections for hashtable, read and write file in java, XML Technologies."
       },
       {
-        "project-name":"Caro Online",
-        "project-description":"Head First Socket, Thread in C# with OOP, deep search and implement Design Pattern to reuse code easier. "
+        "project_name":"CARO ONLINE",
+        "project_description":"Head First Socket, Thread in C# with OOP, deep search and implement Design Pattern to reuse code easier. "
       },
       {
-        "project-name":"Book Trader System",
-        "project-description":"Head First HTML, CSS, PHP MVC."
+        "project_name":"GRAPHIC DRAWING WITH ALGORITHM",
+        "project_description":"Head First and Implement SharpGL With OOP and Drawing Algorithm, apply Design pattern to reuse code."
       }
     ],
     "education":[
       {
-        "school":"University of Science",
-        "degree":"Software Engineering",
+        "school":"VNUHCM - University of Science",
+        "degree":"Bachelor",
         "major":"Software Engineering",
         "education-date":"2013 – 2017",
         "school-img":"images/Logo-KHTN.jpg"
