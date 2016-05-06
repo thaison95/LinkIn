@@ -158,15 +158,14 @@ body{
 }
 
 .summary tr td ul{
-
 }
 
 .summary tr td ul li{
-    float: left;
+    display: inline-block;
 }
 
 .summary tr td ul li:nth-child(n+2){
-
+	
 }
 
 .summary tr td ul li:nth-child(n+2):before{
@@ -585,4 +584,9 @@ body{
 }
 .animate-show.ng-hide {
     opacity: 0;
+}
+
+.btn{
+	float: right;
+	margin-top: -55px;
 }

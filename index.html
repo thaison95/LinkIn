@@ -164,6 +164,7 @@
                 <div class="bgtitle">
                     <img src="images/summary_logo.png" alt="">
                     <p>Summary</p>
+					
                     <div class="clear"></div>
                 </div>
                 <div class="clear bgcontent">
@@ -183,23 +184,53 @@
                 <div class="bgtitle">
                     <img src="images/experience_logo.png" alt="">
                     <p>Experience</p>
+					<button class="btn" ng-click="addE()">Add</button>
                     <div class="clear"></div>
                 </div>
                 <div class="clear bgcontent">
                     <div class="box" ng-repeat="item in data['background']['experience']">
                         <div class="job">
                             <div class="left">
-                                <h4 class="position"><a href="">{{item['position']}}</a></h4>
-                                <h5 class="company"><a href="">{{item['company']}}</a></h5>
-                                <p class="date">{{item['date']}}</p>
+                                <h4 class="position">
+									<a contenteditable="true" id="q" ng-mouseleave="hoverOut()" ng-mouseover="hoverIn()" href="" ng-model="item['position']"></a>
+									<span ng-show="hoverEdit" class="animate-show">
+										<a>
+											<img src="https://cdn2.iconfinder.com/data/icons/freecns-cumulus/16/519584-081_Pen-16.png" alt="">
+											Edit
+										</a>
+									</span>
+								</h4>
+                                <h5 class="company">
+									<a contenteditable="true" id="q" ng-mouseleave="hoverOut()" ng-mouseover="hoverIn()" href="" ng-model="item['company']"></a>
+									<span ng-show="hoverEdit" class="animate-show">
+										<a>
+											<img src="https://cdn2.iconfinder.com/data/icons/freecns-cumulus/16/519584-081_Pen-16.png" alt="">
+											Edit
+										</a>
+									</span>
+								</h5>
+								<a contenteditable="true" id="q" ng-mouseleave="hoverOut()" ng-mouseover="hoverIn()" href="" ng-model="item['date']"></a>
+								<span ng-show="hoverEdit" class="animate-show">
+									<a>
+										<img src="https://cdn2.iconfinder.com/data/icons/freecns-cumulus/16/519584-081_Pen-16.png" alt="">
+										Edit
+									</a>
+								</span>
+                                
                             </div>
                             <div class="right">
                                 <img class="company-img" src="{{item['company-img']}}" alt="">
                             </div>
                             <div class="clear"></div>
                         </div>
-                        <p class="clear description" ng-bind-html="item['description']|to_trusted"></p>
-                    </div>
+                        <p class="clear description" ng-model="item['description']" contenteditable="true" id="q" ng-mouseleave="hoverOut()" ng-mouseover="hoverIn()"></p>
+						<span ng-show="hoverEdit" class="animate-show">
+							<a>
+								<img src="https://cdn2.iconfinder.com/data/icons/freecns-cumulus/16/519584-081_Pen-16.png" alt="">
+								Edit
+							</a>
+						</span>
+					</div>
                 </div>
             </div>
             <div class="bgsection skill">

@@ -27,6 +27,16 @@ app.controller('myCtrl', function($scope, $http) {
     $scope.hoverOut = function(){
         this.hoverEdit = false;
     };
+	
+	$scope.addE = function() {
+		var temp = new Object();
+		temp.position = "Developer";
+		temp.company = "at school";
+		temp.date = "August 2013 – Present (2 years 8 months)";
+		temp.company_img = "";
+		temp.description = "In this time, I learn how to use C++, C#, Java, SQL and complete personal projects.";
+		$scope.data.background.experience.push(temp);
+	};
 });
 
 app.directive("contenteditable", function() {
