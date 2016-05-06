@@ -13,7 +13,7 @@ a{
 
 body{
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 15px;
     width: 100%;
     background-color: #dadada;
@@ -77,10 +77,11 @@ body{
 }
 
 .headline{
-    margin-top: 10px;
-    color: #666666;
-    font-size: 1.3em;
-    font-weight: 600;
+	margin-top: 8px;
+    color: #666;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 22px;
 }
 
 .location{
@@ -101,7 +102,11 @@ body{
 }
 
 .location li a{
-    color: #666666;
+    color: #66696a;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 17px;
+    text-decoration: none;
 }
 
 .location li a:hover{
@@ -141,8 +146,10 @@ body{
 }
 
 .summary tr th a{
+    color: #66696a;
+    font-size: 13px;
     font-weight: normal;
-    color: #666666;
+    line-height: 17px;
 }
 
 
@@ -167,7 +174,10 @@ body{
 }
 
 .summary tr td ul li a{
-
+	color: #333;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 17px;
 }
 
 .summary tr td ul li a:hover{
@@ -314,7 +324,7 @@ body{
 }
 
 .contact-info table tr{
-    margin-top: 5px;
+    height: 30px;
 }
 
 .contact-info table tr th{
@@ -392,14 +402,16 @@ body{
 }
 
 .background>p{
-    background-color: #333333;
-    color: #ffffff;
-    font-weight: 900;
-    padding: 10px 10px;
+    background: #333 none repeat scroll 0 0;
+    color: #fff;
     display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 17px;
+    margin: -26.5px 0 0 -30px;
+    padding: 7.5px 20px;
+    vertical-align: top;
+    word-wrap: normal;
 }
 
 .bgsection{
@@ -419,10 +431,15 @@ body{
 }
 
 .bgtitle p{
-    float: left;
-    margin-left: 10px;
-    line-height: 36px;
-    font-size: 1.6em;
+    color: #434649;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 18px;
+    margin-bottom: 23px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+	padding-left: 50px;
+
 }
 
 .experience .box{
@@ -438,13 +455,19 @@ body{
 }
 
 .experience .box .job .left .position a{
-    font-size: 1.5em;
-    font-weight: 800;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    text-decoration: none;
 }
 
 .experience .box .job .left .company a{
-    font-size: 1.5em;
     color: #434649;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    text-decoration: none;
 }
 
 .experience .box .job .left .position a:hover,
@@ -454,6 +477,7 @@ body{
 
 .experience .box .job .left .date{
     color: #66696a;
+	line-height: 20px;
 }
 
 .experience .box .description{
@@ -461,7 +485,7 @@ body{
 }
 
 .skill .box:nth-child(2){
-    margin-top: 20px;
+    margin-top: 5px;
 }
 .skill .box:nth-child(n+3){
     margin-top: 5px;
@@ -543,4 +567,22 @@ body{
 
 .education .box .right{
     float: right;
+}
+
+#q:hover {
+    background: #EEE;
+}
+
+.animate-show {
+    -webkit-transition: all linear 0.5s;
+    transition: all linear 0.5s;
+    opacity: 1;
+}
+
+.animate-show.ng-hide-add,
+.animate-show.ng-hide-remove {
+    display: inline-block !important;
+}
+.animate-show.ng-hide {
+    opacity: 0;
 }

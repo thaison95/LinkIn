@@ -13,21 +13,47 @@
             <div class="profile-card">
                 <div class="profile-picture">
                     <img class="pic" src="{{data['profile']['pic']}}" width="172" height="240" alt="">
-                    <img class="zoom" src="images/zoom.png" alt="">
+                    <!-- <img class="zoom" src="images/zoom.png" alt=""> -->
                 </div>
                 <div class="profile-overview">
                     <div class="profile-overview-content">
                         <div class="member">
                             <div class="basic-info">
-                                <h1 class="fullname">{{data['profile']['firstname']+" "+data['profile']['lastname']}}</h1>
-                                <p class="headline">{{data['profile']['headline']}}</p>
-                                <ul class="location">
+								<div class="fullname">
+									
+									<a id="q" ng-mouseleave="hoverOut()" ng-mouseover="hoverIn()" contenteditable="true" ng-model="data['profile']['firstname']"></a>
+									<span ng-show="hoverEdit" class="animate-show">
+										<a>
+											<img src="https://cdn2.iconfinder.com/data/icons/freecns-cumulus/16/519584-081_Pen-16.png" alt="">
+											Edit
+										</a>
+									</span>
+									
+									<a id="q" ng-mouseleave="hoverOut()" ng-mouseover="hoverIn()" contenteditable="true" ng-model="data['profile']['lastname']"></a>
+									<span ng-show="hoverEdit" class="animate-show">
+										<a>
+											<img src="https://cdn2.iconfinder.com/data/icons/freecns-cumulus/16/519584-081_Pen-16.png" alt="">
+											Edit
+										</a>
+									</span>
+									
+								</div>
+								<div id="q" ng-mouseleave="hoverOut()" ng-mouseover="hoverIn()" >
+									<a class="headline" contenteditable="true" ng-model="data['profile']['headline']"></a>
+									<span ng-show="hoverEdit" class="animate-show">
+										<a>
+											<img src="https://cdn2.iconfinder.com/data/icons/freecns-cumulus/16/519584-081_Pen-16.png" alt="">
+											Edit
+										</a>
+									</span>
+								</div>
+								<ul class="location">
                                     <li ng-repeat="item in data['profile']['location']"><a href="">{{item}}</a></li>
                                 </ul>
                             </div>
-                            <div class="account-icons">
+                            <!-- <div class="account-icons">
                                 <p class="badge-container"><span class="influencericon">in</span>fluencer</p>
-                            </div>
+                            </div> -->
                             <div class="clear"></div>
                         </div>
                         <table class="summary clear">
@@ -141,7 +167,16 @@
                     <div class="clear"></div>
                 </div>
                 <div class="clear bgcontent">
-                    <p class="description" ng-bind-html="data['background']['summary']['description']|to_trusted"></p>
+				<div id="q" ng-mouseleave="hoverOut()" ng-mouseover="hoverIn()">
+                    <a contenteditable="true" class="description" ng-model="data['background']['summary']['description']"></a>
+					<span ng-show="hoverEdit" class="animate-show">
+						<a>
+							<img src="https://cdn2.iconfinder.com/data/icons/freecns-cumulus/16/519584-081_Pen-16.png" alt="">
+							Edit
+						</a>
+					</span>
+				</div>
+</span>
                 </div>
             </div>
             <div class="bgsection experience">
@@ -174,7 +209,7 @@
                     <div class="clear"></div>
                 </div>
                 <div class="clear bgcontent">
-                    <p>Top Skills</p>
+                    <!-- <p>Top Skills</p> -->
                     <div class="clear box" ng-repeat="item in data['background']['skill']">
                         <a class="endorse-count" href="">{{item['endorse-count']}}</a>
                         <a class="skill-name" href="">{{item['skill-name']}}</a>

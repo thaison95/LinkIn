@@ -4,47 +4,47 @@
     "username":"thái-sơn-nguyễn-42b42611b",
     "firstname":"Nguyễn",
     "lastname":"Thái Sơn",
-    "headline":"Student in University of Science",
-    "location":["Viet Nam","Internet"],
+    "headline":"Student at HCMUS",
+    "location":["Ho Chi Minh City","Internet"],
     "summary":{
-      "current":["University of Science"],
-      "previous":["University of Science"],
-      "education":["University of Science"]
+      "current":["HCMUS"],
+      "previous":["HCMUS"],
+      "education":["VNUHCM - University of Science"]
     },
     "follow":"9,999,999",
-    "twitter":"khanhli81026575",
+    "twitter":"thaison.nguyen.7121",
     "websites":""
   },
   "background":{
     "summary":{
-      "description":"Nothing To Say Now."
+      "description":"Third-year student at University of Science. Major: Software Engineer. Favorite programming language: Java. Interests: reading, guitar, sport."
     },
     "experience":
             [
               {
-              "position":"Position Here",
-              "company":"Company Here",
-              "date":"From - To Date",
-              "company-img":"Img Link",
-              "description":"Description"
+              "position":"Developer",
+              "company":"at school",
+              "date":"August 2013 – Present (2 years 8 months)",
+              "company-img":"images/intuit_experience.png",
+              "description":"In this time, I learn how to use C++, C#, Java, SQL and complete personal projects."
               }
             ],
     "skill":[
       {
-        "endorse-count":"97",
-        "skill-name":"PHP"
+        "endorse-count":"80",
+        "skill-name":"C#"
       },
       {
-        "endorse-count":"97",
-        "skill-name":"HTML, CSS"
+        "endorse-count":"80",
+        "skill-name":"C++"
       },
       {
-        "endorse-count":"97",
-        "skill-name":"Javascript"
+        "endorse-count":"75",
+        "skill-name":"Java"
       },
       {
-        "endorse-count":"97",
-        "skill-name":".Net"
+        "endorse-count":"50",
+        "skill-name":"HTML&CSS"
       }
     ],
     "project":[
